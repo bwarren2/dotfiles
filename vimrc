@@ -8,7 +8,7 @@ set encoding=utf-8
 set nu
 
 "System clipboard
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " No arrow keys
 noremap <Up> <NOP>
