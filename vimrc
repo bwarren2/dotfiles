@@ -16,12 +16,19 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
-
+Plugin 'jnurmine/Zenburn'
+Plugin 'altercation/vim-colors-solarized'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 " End Vundle stuff
+
+" Make color changes manifest
+let g:solarized_termcolors=256
+syntax enable
+set background=light " Or dark
+colorscheme solarized
 
 " Choose character encoding
 set encoding=utf-8
