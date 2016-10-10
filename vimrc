@@ -19,6 +19,12 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
 
+" Automatic formatting of Markdown tables.
+Plugin 'godlygeek/tabular'
+" Markdown syntax and tools. MUST come after tabular.
+Plugin 'plasticboy/vim-markdown'
+
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -29,6 +35,13 @@ let g:solarized_termcolors=256
 syntax enable
 set background=light " Or dark
 colorscheme solarized
+
+""""
+" Markdown configuration
+let g:vim_markdown_folding_style_pythonic = 1
+" Spell check markdown files.
+autocmd FileType markdown setlocal spell
+
 
 " Choose character encoding
 set encoding=utf-8
